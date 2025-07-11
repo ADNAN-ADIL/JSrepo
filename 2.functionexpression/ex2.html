@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //2.function expression cannot allow hoisting
+            let t1=simpleInterest(200000,12,12)
+            console.log(t1);
+            let simpleInterest=function(p,t,r)
+            {
+                let result
+                result=(p*t*r)/100
+                return result
+            }
+          
+            //1.function expression cannot allow function re-declaration
+            // let simpleInterest=function(p,t,r){
+            //     let result
+            //     result=(p*t*r)/100
+            //     return result
+            // }
+        </script>
+    </body>
+</html>
