@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>rest parameters(...)</title>
+</head>
+<body>
+  <script>
+    function total(...items){
+      let s=0
+      for(let i=0;i<items.length;i++){
+        s=s+items[i]
+      }
+      console.log(s);
+    }
+    total(250,750)
+    total(250,750,600)
+    total(250,750,600,700,300)
+    total(250,750,600,250,750,600,700,300,100,400)
+  </script>
+</body>
+
+</html>
