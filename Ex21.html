@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>== vs ===</title>
+</head>
+
+<body>
+  <script>
+    console.log(10 == 10);
+    console.log(10 === 10);
+    //left:number   right:string
+
+    //==  ignore the datatype
+    //==  necessery conversions
+    console.log(10 == '10');
+    //==  consider the datatype
+    //==  no necessery conversions
+    console.log(10 === '10');
+
+    console.log(true == true);
+    console.log(true == 'true');
+
+    console.log(true === 'true');
+
+    console.log(true == 1);
+    console.log(true == 0);
+
+    console.log(false == 1);
+    console.log(false == 0);
+  </script>
+</body>
+
+</html>
