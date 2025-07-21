@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        let cartItems = []
+        // cartItems.push('Nons')
+        // cartItems.push('Chicken Curry')
+        // cartItems.push('Biryani')
+        // cartItems.push('IceCream')
+        // console.log(cartItems);
+        // cartItems.pop()
+        // cartItems.pop()
+        // console.log(cartItems);
+
+        cartItems.unshift('Nons')           // 0 - Nons
+        cartItems.unshift('Chicken Curry')  // 0 - Chicken Curry , 1 - Nons
+        cartItems.unshift('Biryani')        // 0 - Biryani ,1 - Chicken Curry , 2 - Nons
+        cartItems.unshift('IceCream')       // 0 - IceCream , 1-Biryani ,2 - Chicken Curry , 3 - Nons
+        console.log(cartItems);
+        cartItems.shift()       // 0 - IceCream
+        cartItems.shift()       // 0 - Biryani
+        console.log(cartItems); //0 - Chicken Curry , 1 - Nons
+
+        cartItems.pop('Nons')
+        console.log(cartItems); //0 - Chicken Curry , 1 - Nons
+
+    </script>
+</body>
+
+</html>
