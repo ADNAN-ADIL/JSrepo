@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <title>Doubt : Rest Parameter</title>
+<body>
+    <script>
+       function total(...subjects)
+       {
+            let r=subjects.reduce( (a,b) => a+b);
+            return r
+       }
+
+       let r=total(10,12,13,14,15,26,13,14,17,19)
+       console.log(r);
+       r=total(10,12,13)
+       console.log(r);
+       r=total(10,12,13,14,15,)
+       console.log(r);
+    </script>
+</body>
+
+</html>

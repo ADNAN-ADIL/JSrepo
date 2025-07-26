@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <title>Doubt :Set vs Map</title>
+<body>
+    <script>
+        let myArray =new Array();
+        myArray.push(10);
+        myArray.push(10);
+        myArray.push(10);
+        myArray.push(10);
+        console.log(myArray);
+        let mySet = new Set();  //cannot allow duplicates
+        // Add values to the Set
+        mySet.add("c");
+        mySet.add("a");
+        mySet.add("a");
+        mySet.add("b");
+        mySet.add("c");
+        console.log(mySet);  // insertion order
+        let myObject = new Object();
+        myObject['id']=1
+        myObject['name']="Ajay"
+        myObject['city']="Hyd"
+        console.log(myObject);  //Ascending order keys
+
+        let myMap = new Map();
+        myMap.set("price", 30000);
+        myMap.set("hdd", 500);
+        myMap.set("company", "HP");
+        console.log(myMap);
+    </script>
+</body>
+
+</html>

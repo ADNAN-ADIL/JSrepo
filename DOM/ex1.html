@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            DOM Manipulation
+        </title>
+    </head>
+    <body>
+        <p id="p1" style="color: red;">
+                Hello
+        </p>
+        <p id="p2">
+                Hi
+        </p>
+        <!--DOM (html+css) Manipulation-->
+        <script>
+            //Html Manipulation
+            document.getElementById('p1').innerHTML='Welcome';
+            document.getElementById('p2').innerHTML='Good morning'
+            //Css Manipulation
+            document.getElementById('p1').style.color='green'
+            document.getElementById('p1').style.backgroundColor='silver'
+            document.getElementById('p2').style.color='white'
+            document.getElementById('p2').style.backgroundColor='black'
+        </script>
+    </body>
+</html>

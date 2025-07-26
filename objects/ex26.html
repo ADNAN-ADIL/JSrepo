@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    JS Objects: bind() 
+  </title>
+</head>
+<body>
+  <script>
+    //function expression
+      let show  =function(age,city,gender){
+                console.log(`${this.id} id name is: ${this.name}, Age=${age},City=${city},Gender=${gender}`);
+              }
+      let student={
+              id    :101,
+              name  :'Ajay'
+            };
+      let employee={
+              id    :501,
+              name  :'Savitha'
+            };
+   let newStudent=show.bind(student)
+   newStudent(45,'Sec','male')
+
+   let newEmployee=show.bind(employee)
+   newEmployee(22,'Farana','female')
+
+  </script>
+</body>
+
+</html>
