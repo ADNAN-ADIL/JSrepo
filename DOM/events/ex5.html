@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form: submit and reset</title>
+    <style>
+      div,span{color: red;}
+    </style>
+    <script>
+       function fun1(){
+          let userid=document.getElementById('id1').value
+          let pswd=document.getElementById('id2').value
+          //validation: checking proper entry of data in the form
+          //validation1: text field validation
+          if (userid == ""){
+            //approach1:Using alert
+            // alert("UserId should not be empty");
+            //approach2:Using span
+            // document.getElementById('s1').innerHTML="* UserId should not be empty"
+            //approach3:Using div
+            document.getElementById('d1').innerHTML="* UserId should not be empty"
+            return false;
+          }
+          if (pswd == ""){
+             //approach1:Using alert
+            // alert("Password should not be empty");
+             //approach2:Using span
+            //  document.getElementById('s2').innerHTML="* Password should not be empty"
+            //approach3:Using div
+            document.getElementById('d2').innerHTML="* Password should not be empty"
+            return false;
+          }
+          else
+          {
+            // let msg=`Hey ${userid}, your password is: ${pswd}`;
+            alert('Data is Valid')
+            return true;
+          }
+       }
+       function fun2(){
+          let result=confirm('Are you sure to erase ?')
+          if(result){
+            return true
+          } else {
+            return false
+          }
+       }
+    </script>
+</head>
+<body>
+ <form name="f1" action="ServerPage1" method="get" onsubmit="return fun1()" onreset="return fun2()">
+  <table align="center">
+    <tr>
+        <td>
+         <label for="id1">Enter your UserId</label>
+        </td>
+        <td>
+          <input type="text" id="id1" name="n1"> 
+          <span id="s1">*</span>
+        </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="id2">Enter your Password</label>
+       </td>
+       <td>
+         <input type="password" id="id2" name="n2"> 
+         <span id="s2">*</span>
+       </td>
+    </tr>
+    <tr>
+        <td>
+          <input type="submit" value="SingIn">
+        </td>
+        <td>
+          <input type="reset" value="Clear">
+        </td>
+    </tr>
+    <tr>
+      <td>
+        <div id="d1"></div>
+      <div id="d2"></div>
+      </td>
+    </tr>
+  </table>
+ </form>
+</body>
+</html>

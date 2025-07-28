@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse: click and dblclick</title>
+        <script>
+            function fun1(){
+                let fname=document.getElementById('t1').value
+                let lname=document.getElementById('t2').value
+                let msg = 'Your name is: '+fname+" "+lname
+                alert(msg)
+            }
+        </script>
+    </head>
+    <body>
+        Enter your first name:<input type="text" id="t1"> <br>
+        Enter your last name:<input type="text" id="t2"> <br>
+        <button ondblclick="fun1()">
+            Show FullName
+        </button>
+    </body>
+</html>
