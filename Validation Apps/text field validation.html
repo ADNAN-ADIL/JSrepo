@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function validateform() {
+            var name = document.getElementById('t1').value
+            if (name == "") {
+                alert("Name can't be blank");
+                return false;
+            } else if (name.length < 6 ) {
+                alert("Name must be at least 6 characters long.");
+                return false;
+            } else{
+                return true
+            }
+        }  
+    </script>
+</head>
+
+<body>
+    <form name="f1" action="abc.jsp" onsubmit="return validateform()">
+        Name: <input type="text" id="t1" name="personName"><br />
+        <input type="submit" value="validate">
+    </form>
+</body>
+
+</html>
